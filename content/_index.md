@@ -45,16 +45,13 @@ sections:
       items:
         - statistic: "1M+"
           description: |
-            Websites built  
-            with Hugo Blox
+            fMRI Data we analysis
         - statistic: "10k+"
           description: |
-            GitHub stars  
-            since 2016
+            Encoding and Decoding Model we design
         - statistic: "3k+"
           description: |
-            Discord community  
-            for support
+            Outputs
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
@@ -65,7 +62,7 @@ sections:
     id: features
     content:
       title: Features
-      text: Build your site with blocks 🧱
+      text: 
       items:
         - name: Optimized SEO
           icon: magnifying-glass
