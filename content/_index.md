@@ -10,19 +10,19 @@ design:
 sections:
   - block: hero
     content:
-      title: Build Your Landing Pages with Hugo Blox
-      text: 🧱 EASY. FREE (OPEN SOURCE). NO-CODE  🧱
+      title: How the Human Brain Makes Sense of Multimodal Movies
+      text: Based on fMRI Data
       primary_action:
         text: Get Started
-        url: https://hugoblox.com/templates/
+        url: https://tenzindann.github.io/blog/brain-study/
         icon: rocket-launch
       secondary_action:
-        text: Read the docs
-        url: https://docs.hugoblox.com
+        text: Read the Poster
+        url: https://tenzindann.github.io/blog/brain-study/
       announcement:
-        text: "Announcing the release of version 1."
+        text: "" #Announcing the release of version 1.
         link:
-          text: "Read more"
+          text: "" #Read more
           url: "/blog/"
     design:
       spacing:
