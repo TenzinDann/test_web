@@ -18,14 +18,18 @@
 
   <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-16">
     <div class="xl:grid xl:grid-cols-3 xl:gap-8 xl:items-start">
-      <div class="{{ if $hasFooterMenus }}xl:col-span-1{{ else }}xl:col-span-3{{ end }}">
+      <div class="{{ if $hasFooterMenus }}xl:col-span-1{{ else }}xl:col-span-3{{ end }} flex flex-col items-center pt-10 text-center">
         {{ if $show_logo }}
         {{ with $logo.resource }}
           {{ if $logo.is_svg }}
-            <div class="footer-logo" style="height: {{ $logo_height }}px;">
+            <div class="footer-logo mx-auto mb-2 text-gray-900 dark:text-white" style="height: {{ $logo_height }}px;">
               {{- .Content | safeHTML -}}
             </div>
-            <style>.footer-logo svg { height: 100%; width: auto; }</style>
+            <style>
+              .footer-logo { display: flex; justify-content: center; align-items: center; width: 100%; }
+              .footer-logo svg { display: block; height: 100%; width: auto; color: currentColor; }
+              .footer-logo svg * { fill: currentColor !important; stroke: currentColor !important; }
+            </style>
           {{ else }}
             <img
               decoding="async"
@@ -37,12 +41,12 @@
         {{ end }}
         {{ end }}
         {{ if $show_title }}
-        <a class="text-lg font-bold tracking-tighter text-primary-600 transition duration-500 ease-in-out lg:pr-8 dark:text-primary-200" href="{{site.Home.RelPermalink}}">
+        <a class="text-center text-lg font-bold tracking-tighter text-primary-600 transition duration-500 ease-in-out dark:text-primary-200" href="{{site.Home.RelPermalink}}">
           {{ $footer_title }}
         </a>
         {{ end }}
         {{ if $show_tagline }}
-        <p class="mt-2 w-1/2 whitespace-pre-line text-sm text-gray-500 dark:text-gray-300">{{ site.Params.hugoblox.identity.tagline | default "" }}</p>
+        <p class="mt-2 w-full max-w-md text-sm text-gray-500 dark:text-gray-300">{{ site.Params.hugoblox.identity.tagline | default "" }}</p>
         {{ end }}
         {{- $show_social := site.Params.hugoblox.footer.show_social | default true -}}
         {{ if $show_social }}

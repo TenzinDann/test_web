@@ -19,9 +19,7 @@ hugoblox:
     # Schema.org type for structured data
     type: person                              # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: |-
-      Sociologist, Anthropologist,
-      AI Engineer
+    tagline: "Sociologist, Anthropologist, AI Engineer"
     # Site meta description for search engines and social sharing
     description: "Danzeng Cairang's capstone showcase site."
     # Social accounts (used for meta tags like Twitter Cards)
@@ -121,6 +119,7 @@ hugoblox:
   footer:
     # Footer style variant
     style: columns                      # minimal | columns | centered
+    logo_height: 88
     show_logo: true
     show_title: true
     show_tagline: true
